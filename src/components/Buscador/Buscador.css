@@ -1,0 +1,27 @@
+.cnt {
+    padding-top: 10px;
+}
+.form-container {
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left: 20px;
+
+}
+
+.form-container button {
+    margin-left: 20px;
+   
+}
+
+.label {
+    padding-right: 10px;
+    color:azure
+}
+
+h2{
+    color: #787D8F;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
