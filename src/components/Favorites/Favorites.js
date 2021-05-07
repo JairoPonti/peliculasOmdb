@@ -10,15 +10,20 @@ export class ConnectedList extends Component {
     return (
       <div>
         <h2>Películas Favoritas</h2>
-        <ul>
+        <section className="col-10 m-auto p-5">
+        <ul className="row">
           {this.props.movies && this.props.movies.map((el, i) => (
-              <div key={i}>
-                <h4>{el.title}</h4>
-                <button onClick={() => this.props.removeMovieFavorite({title:el.title, id:el.imdbID}) }> X</button>
+            <div key={i} className="col p-3">
+              <div>
+                <h4 className="col">{el.title}</h4>
+                <button className="col" style={{marginLeft:"266.2px"}}onClick={() => this.props.removeMovieFavorite({title:el.title, id:el.imdbID}) }> X</button>
+                </div>
+                <img src={el.img}/>
               </div>
           ))
           }
         </ul>
+        </section>
       </div> 
     );
   }

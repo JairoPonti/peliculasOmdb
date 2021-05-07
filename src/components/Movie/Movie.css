@@ -49,11 +49,11 @@
     width: 480px;
 }
 
-.img img {
-  width: 200px;
-  height: 210px;
-  padding-left: 50px;
-}
+/* .img {
+  width: 100px !important;
+  height: 160px !important;
+  
+} */
 .container2 {
   display: flex;
   flex-direction: row;
