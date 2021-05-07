@@ -50,7 +50,7 @@ export class Buscador extends Component {
               </NavLink>
               </div>
               <div className="col">
-              <button onClick={() => this.props.addMovieFavorite({ title: peli.Title, id: peli.imdbID })} style={{color: "white", backgroundColor: "#7124D3"}}>Fav</button>
+              <button className="add" onClick={() => this.props.addMovieFavorite({ title: peli.Title, id: peli.imdbID, img: peli.Poster })}>Fav</button>
               </div>
             </div>))}
         </ul>
