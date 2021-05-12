@@ -38,3 +38,13 @@ h2{
     margin-left: 20px;
   }
 
+ #foto{
+     height: auto !important;
+     width: auto !important ;
+   
+     background-size: cover !important;
+ }
+
+#visit:visited{
+  color: violet
+}

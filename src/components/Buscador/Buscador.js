@@ -43,9 +43,9 @@ export class Buscador extends Component {
         <ul className="row">
           {this.props.movies && this.props.movies.map((peli, i) => (
             <div key={i} className="col p-3">
-              <img src={peli.Poster}/>
+              <img src={peli.Poster} alt="Imágen No disponible"/>
               <div className="col">
-              <NavLink to={`/movie/${peli.imdbID}`}>
+              <NavLink id="visit" to={`/movie/${peli.imdbID}`}>
                 {peli.Title}
               </NavLink>
               </div>
