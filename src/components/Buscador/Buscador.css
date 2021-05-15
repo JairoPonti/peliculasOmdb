@@ -21,12 +21,17 @@
 
 .add{
    color: white;
-   background-color: #7124D3
+   background-color: #7124D3;
+   border-color:  #7124D3;
+   border: 1px;
+   border-radius: 3px;
 }
+
 button:active{
     color: #7124D3;
     background-color: white
 }
+
 .added{
     color: #7124D3;
    background-color: white
@@ -41,10 +46,33 @@ h2{
  #foto{
      height: auto !important;
      width: auto !important ;
-   
      background-size: cover !important;
  }
 
-#visit:visited{
+ #buttonBuscarStyle{
+    color: white;
+    background-color: #7124D3;
+    border-radius: 1.5px;
+    border:  #7124D3 1px;
+    transition: all 2s;
+ }
+
+ #buttonBuscarStyle:hover{
+    color: #7124D3;
+    background-color: white
+  }
+  
+  
+
+/* #visit:visited{
   color: violet
+} */
+
+.dimensiones{
+    width: 100% !important;
+    height: 425px !important;    
+}
+
+.imgprueba{
+    width: max-content !important;
 }
