@@ -13,6 +13,11 @@ export class Buscador extends Component {
       title: ""
     };
   }
+
+  // componentDidMount() {
+  //   window.scrollTo(0, 0);
+  // }
+  
   handleChange(event) {
     this.setState({ title: event.target.value });
   }
@@ -36,20 +41,20 @@ export class Buscador extends Component {
               onChange={(e) => this.handleChange(e)}
             />
           </div>
-          <button type="submit">BUSCAR</button>
+          <button id="buttonBuscarStyle" type="submit">BUSCAR</button>
         </form>
        
           <nav className="col-10 m-auto p-5">
         <ul className="row">
           {this.props.movies && this.props.movies.map((peli, i) => (
-            <div key={i} className="col p-3">
-              <img src={peli.Poster} alt="Imágen No disponible"/>
+            <div key={i} className="col-4 p-3">
+              <img className="dimensiones" src={peli.Poster} alt=""/>
               <div className="col">
-              <NavLink id="visit" to={`/movie/${peli.imdbID}`}>
+              <NavLink  to={`/movie/${peli.imdbID}`}>
                 {peli.Title}
               </NavLink>
               </div>
-              <div className="col">
+              <div className="col p-2">
               <button className="add" onClick={() => this.props.addMovieFavorite({ title: peli.Title, id: peli.imdbID, img: peli.Poster })}>Fav</button>
               </div>
             </div>))}

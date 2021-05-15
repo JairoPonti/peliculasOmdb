@@ -1,19 +1,28 @@
+import { findByLabelText } from "@testing-library/dom";
 import React from "react";
 import { connect } from "react-redux";
 import { getMovieDetail } from "../../actions/index";
 import "./Movie.css";
 
 class Movie extends React.Component {
+
+      goBack() {
+      window.history.back();     
+     }
+
   componentDidMount() {
     const movieId = this.props.match.params.id; //Obtengo el id del obj match que se genera en el routing
     console.log(movieId);
     this.props.getMovieDetail(movieId);
   }
-
+  
   render() {
     return (
       <div id="contenedor" className="container p-2 bg-transparent">
         <h1>{this.props.movie.Title}</h1>
+        <div className="buttonPosition">
+        <button id="buttonStyle" onClick={()=> this.goBack()}>Atrás</button>
+        </div>
         <section className="col-12 ms-5">
           <div className="row">
             <div className="col-4 ">

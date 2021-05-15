@@ -1,3 +1,15 @@
 .cnt {
     padding-top: 10px;
 }
+
+.dimensiones{
+    width: 100% !important;
+    height: 425px !important;    
+}
+
+#button{
+    color: #7124D3;
+    background-color: white;
+    border: 4px !important;
+    border-color:green !important ;
+}
