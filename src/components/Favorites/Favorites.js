@@ -6,11 +6,16 @@ import './Favorites.css';
 
 export class ConnectedList extends Component {
 
+  goBack() {
+    window.history.back();     
+   }
+
   render() {
     return (
       <div>
 
         <h2>Películas Favoritas</h2>
+        <button id="buttonStyle" onClick={()=> this.goBack()}>Atrás</button>
         <section className="col-10 m-auto p-5">
         <ul className="row">
           {this.props.movies && this.props.movies.map((el, i) => (
