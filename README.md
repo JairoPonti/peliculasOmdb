@@ -3,7 +3,7 @@
 
 <h4>"Películas Omdb" es un buscador de películas que interactúa con la Api de Omdb.</h4>
 <h4>Su apariencia fue lograda con el uso de Bootstrap y CSS, aplicando el diseño responsive de filas y columnas propio de Botstrap.
-  Fue un proyecto que no había finalizado, y decidí retomarlo para darle un restyling, <em> basándome en el aspecto de "Pelispedia.com" </em>, principalmente en la disposición de sus elementos, y en su paleta de colores.
+  Fue un proyecto que no había finalizado, y decidí retomarlo para darle un restyling, <em> basándome en el aspecto de "https://www.pelispedia.de/" </em>, principalmente en la disposición de sus elementos, y en su paleta de colores.
 </h4>
 <strong>Está desarrollado principalmente con ReactJs, Javascript, Redux, Bootstrap y CSS</strong>
 </br>
